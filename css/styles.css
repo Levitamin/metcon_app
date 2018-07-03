@@ -1,0 +1,165 @@
+body {
+  overflow: hidden;
+   padding-top: constant(safe-area-inset-top);
+ padding-top: env(safe-area-inset-top); 
+ -webkit-backface-visibility: hidden;
+ -webkit-transform: translate3d(0, 0, 0);
+    -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+          user-select: none;
+		 
+}
+
+/* .yourFooterClass {
+ margin-bottom: constant(safe-area-inset-bottom); 
+ margin-bottom: env(safe-area-inset-bottom); 
+} */
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	width: 75%;
+	height: 30px;
+	/* margin: 0 auto; */
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.button:hover {
+    background-color: #778899;	
+    color: white;
+}
+
+	
+.page-content {
+ /* background-image: url('../chart_icon.png');
+background-repeat: no-repeat;
+    background-position: bottom; 
+	background-size: contain;
+background-attachment: local; */
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  padding-top: 10px;
+display: flex;
+flex-direction: column;
+align-items: center; 
+  
+}
+
+/* .one{
+float:left;
+width:50%;
+overflow:hidden;
+display: flex;
+flex-direction: column;
+align-items: center; 
+}
+.two{
+float:left;
+width:50%;
+overflow:hidden;
+display: flex;
+flex-direction: column;
+align-items: center; 
+}  */
+
+
+
+.views,
+.page {
+  overflow: hidden;
+}
+
+.statusbar-overlay{
+	background: #778899;
+}
+
+.panel-left{
+	background: #778899;
+}
+
+
+#map {
+     height: 100%;
+	 position:relative;
+  }
+  
+  #search_B {
+         display: inline-block;
+         position: absolute;
+         top:46px;
+		width: 100%;
+		 
+       }
+	   
+	   #search_C{
+         display: inline-block;
+         position: absolute;
+         top:46px;
+		width: 100%;
+		 
+       }
+	   .esriPopup .actionsPane .zoomTo{     
+       display: none; 
+       }  
+	   
+	   .esriPopup .titleButton.maximize {
+        display: none;
+      }
+	  
+	/* #HomeButton {
+		  position: absolute;
+		  top: 46px;
+		  right:5px;
+		  z-index: 2;
+		} */
+	 
+	
+@-webkit-keyframes
+       pulse
+      { 
+        0%
+        {
+          opacity: 1.0;
+
+        }
+        45%
+        {
+          opacity: .20;
+
+        }
+        100%
+        {
+          opacity: 1.0;
+
+        }
+      }
+     @-moz-keyframes
+       pulse
+      {
+        0%
+        {
+          opacity: 1.0;
+        }
+        45%
+        {
+          opacity: .20;
+
+        }
+        100%
+        {
+          opacity: 1.0;
+        }
+      }
+
+      #map_graphics_layer {
+	
+		
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-name: pulse;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-name: pulse;
+      }
